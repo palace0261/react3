@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Works from "../pages/Works";
+import Test from "../pages/Test";
 import Contact from "../pages/Contact";
 import Layout from "./Layout";
 
@@ -18,6 +19,7 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="works" element={<Works />} />
+          <Route path="Test" element={<Test />} />
         </Routes>
       </Layout>
     </BrowserRouter>
