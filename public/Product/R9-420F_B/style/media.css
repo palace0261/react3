@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+  body #container section ul{
+    grid-template-columns: 1fr;
+  }
+  body #container .a_duct > div{
+    padding: 1rem;
+  }
+  #container .pduct,
+  #container section{
+    margin: 0px;
+    /* padding: 0.25rem; */
+  }
+
+    * {
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    * {
+    }
+  }
+

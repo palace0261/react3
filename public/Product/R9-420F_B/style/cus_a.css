@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+/* Custom CSS for R9-420F_B */
+/* General Styles */ 
+
+section{
+  position: relative;
+  margin: 0 1.25rem;
+  color: var(--color-w);
+}
+
+#container .a_duct > div {
+  padding:0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-b);
+}
+
+section:nth-child(n+2) > div img{
+  margin-top: calc(2rem + 1.25vw);
+  border-radius:0.5rem;
+}
+
+section:nth-child(n+2) > div{
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  min-height: 16rem;
+  padding: 3rem 0.5rem;
+  border-bottom: 1px solid var(--color-b);
+}
+
+section:nth-child(n+3) > div h2
+{
+  font-size: calc(1.5rem + 1.25vw);
+}
+
+section:nth-child(n+3) > div span
+{
+  font-size: calc(1rem + 0.25vw);
+}
+
+.pduct div+div{
+  position: absolute;
+  top:0;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+.pduct > div+div li{
+  text-align:center;
+}
+
+.pduct > div+div img{
+  width: 10%;
+  scale: 0.8;
+  min-width: 7rem;
+}
+
+.pduct > div+div h2{
+  font-size: calc(2rem + 1.25vw);
+}
+.pduct > div+div h3{
+  font-size: calc(2rem + 0.25vw);
+  font-weight:400;
+}
+
+/* */
+
+.a_duct{
+  /* background-color: var(--color-b); */
+  /* border-bottom: 1px solid var(--color-g); */
+  height: calc(15rem + 0.25vw);
+}
+
+.a_duct > div{
+  position: relative;
+  background: #cccccc00;
+  top: calc(-7rem + -0.75vw);
+}
+
+.a_duct > div > h1{
+  font-size: calc(4rem + 1.25vw);
+}
+
+.a_duct > div > h3{
+  font-size: calc(2rem + 1.25vw);
+}
+
+.c_duct img{
+  /* background: #1d3045; */
+  padding: calc(1rem + 0.25vw) calc(1rem + 0.25vw) 0;
+  background: #03001f;
+  background: linear-gradient(90deg, rgba(3, 0, 31, 1) 0%, rgba(0, 0, 92, 1) 50%, rgba(0, 4, 5, 1) 100%);
+}
+
+.redline{
+    border-left: 7px solid #ff4040;
+    line-height: 0.8;
+    margin-bottom: 0.725rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+  }
+
+.w_duct ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}

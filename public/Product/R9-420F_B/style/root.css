@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+:root{
+    --font-a: 'noto-sans-kr', 'Noto Sans KR', 'SUIT-Regular', sans-serif; 
+    --color-a: #3498db;
+    --color-b: #dadada;
+    --color-g: #6d6d6d;
+    --color-w: #f3f3f3;
+    --color-b: #131313;
+    --color-bb: #000;
+    --max-width: 1440px;
+    --size-a:0.75rem;
+    --size-ca:calc(1rem + 0.25vw);
+}
