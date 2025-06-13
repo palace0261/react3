@@ -12,11 +12,12 @@ section{
 #container .a_duct > div {
   padding:0;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--color-b);
+  /* border-bottom: 1px solid var(--color-b); */
 }
 
-section:nth-child(n+2) > div img{
-  margin-top: calc(2rem + 1.25vw);
+section:nth-child(n+2) > div span + img,
+.g_duct > div > span+div{
+  margin-top: calc(1rem + 1.25vw);
   border-radius:0.5rem;
 }
 
@@ -25,20 +26,55 @@ section:nth-child(n+2) > div{
   max-width: 860px;
   margin: 0 auto;
   min-height: 16rem;
-  padding: 3rem 0.5rem;
-  border-bottom: 1px solid var(--color-b);
+  padding: 3rem 0;
+}
+#container .rl_sdu ul li span{
+  font-size: calc(0.5rem + 0.25vw);
 }
 
-section:nth-child(n+3) > div h2
-{
+.spx h2{
+  border-bottom: 4px solid #fd1111;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+section:nth-child(n+3) > div h2{
   font-size: calc(1.5rem + 1.25vw);
 }
 
 section:nth-child(n+3) > div span
 {
-  font-size: calc(1rem + 0.25vw);
+  font-size: calc(1.225rem + 0.25vw);
+  width: 100%;
 }
 
+.g_duct > div > span+div img:first-child{
+  width: 98%;
+}
+
+.g_duct > div > span+div img:last-child{
+
+    border-radius: 1rem;
+    position: absolute;
+    right: 0px;
+    bottom: -1rem;
+    width: 10%;
+}
+
+.g_duct > div > span+div{
+  display: grid;
+  position: relative;
+}
+
+.pduct > div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pduct > div img{
+  border-radius:1rem;
+}
 .pduct div+div{
   position: absolute;
   top:0;
@@ -65,6 +101,7 @@ section:nth-child(n+3) > div span
 }
 
 /* */
+
 
 .a_duct{
   /* background-color: var(--color-b); */
@@ -101,9 +138,181 @@ section:nth-child(n+3) > div span
     padding-left: 0.5rem;
   }
 
+.rl_sdu{
+  border-top: 1px solid #202020;
+}
+
+.rl_sdu div{
+  overflow: hidden;
+  /* max-height: 32rem; */
+}
+
+.rl_sdu img{
+  position: relative;
+  top: 0rem;
+}
+
+.w_duct img{
+  display:block;
+}
+
+.w_duct ul > li:first-child{
+  /* grid-row: span 2; */
+  /* grid-column: span 2; */
+}
+
+.w_duct ul li{
+  background: #090909;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
 .w_duct ul{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   gap: 2rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
+
+.w_duct picture:nth-child(n+2){
+  position:absolute;
+}
+
+.f_duct > div > div img{
+  border-radius: 0.75rem;
+
+}
+
+.f_duct > div > div img:first-child{
+  filter: saturate(0.6);
+}
+
+.f_duct > div > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1.5rem;
+  min-height: 0;
+  padding: 1rem 0rem 0 0;
+  align-items: center;
+  justify-items: center;
+}
+
+.spec > div:last-child{
+  background:#ccc;
+}
+
+.spec{
+  /* background: #4c4c4c; */
+}
+
+.spec h3{
+  font-size:80%;
+}
+
+.spec h4{
+  font-size:60%;
+}
+
+.spec > div:first-child{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 0.5rem;
+  min-height: 0;
+  padding: 1rem 0rem 0 0;
+  align-items: center;
+  justify-items: center;
+  background: #fd11118a;
+  /* border-radius: 1rem; */
+  /* border-top: 1px solid var(--color-g); */
+  /* border-bottom: 1px solid var(--color-g); */
+  margin-top: calc(5rem + 0.25vw);
+}
+
+.spec > div:first-child label{
+  display: flex;
+  background-color: #6c6c6c;
+  /* border-radius: 0.5rem; */
+  /* margin: 0.5rem; */
+  padding: 1.0rem;
+  width: 100%;
+}
+
+#container .spx{
+  background: var(--color-b);
+  padding: 1rem;
+}
+
+.spec th{
+  text-align: left;
+  font-size: calc(0.725rem + 0.25vw);
+  color: var(--color-w);
+  padding: 0.5rem;
+  width: 20%;
+}
+
+.spec td{
+  font-size: calc(0.725rem + 0.25vw);
+  color: var(--color-w);
+  padding: 0.5rem;
+  width: 80%;
+}
+
+
+.spec span div{
+  display: none;
+}
+
+.hd_grid img {
+  display:block;
+}
+
+
+.hd_grid > li:nth-child(4){
+  border: 4px solid #bb0000;
+}
+
+.hd_grid > li:nth-child(5){
+  border: 4px solid #0020bb;
+}
+
+.hd_grid > li:last-child{
+  border: 4px solid #9a00bb;
+}
+
+.hd_grid{
+  overflow: hidden;
+}
+
+
+.hd_grid li:nth-child(5) img{
+  scale: 1.5;
+}
+
+
+.hd_grid li:last-child img{
+  scale: 2;
+}
+
+.hd_grid img{
+}
+
+.hd_grid li{
+  overflow:hidden;
+}
+
+.hd_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr;
+  gap: 1.5rem;
+  min-height: 0;
+  padding: 1rem 0rem 0 0;
+  margin-top: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+/* 2025-06-12ㅣR9-420Fㅣcus_a.css */
