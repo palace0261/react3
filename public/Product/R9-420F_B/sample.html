@@ -55,8 +55,7 @@
 
     <section class="a_duct">
       <div>
-        <h1>R9-420F</h1>
-        <h3 class="redline"><p></p>RED LINE</h3>
+        <h1 class="redline">R9-420F</h1>
         <span>BOLIN R9-420F는 스튜디오 방송, 라이브 프로덕션 및 전문 AV ​​애플리케이션용으로 설계된 고성능 전문가용 PTZ 카메라입니다, 부드러운 움직임과 최적화된 화질을 위해 설계되었으며 초당 최대 60프레임의 4K 해상도를 제공하여 라이브 이벤트, 스포츠 중계, 기업 프로덕션, 스튜디오와 같은 환경에서 부드러운 영상 촬영을 보장합니다. </span>
       </div>
     </section>
@@ -79,7 +78,7 @@
             </picture>
             <div>
               <h3>R9-420F</h3>
-              <span>20X Zoom Range,1/2.8 Inch 4K Sony Image Sensor, 4K60(2160p59.97), Full HD (1080/i59.94/p60) , 12G-SDI + SFP-SDI+HDMI2.0+IP, FAST HEVC, Ultra Low Latency, Low Bandwidth, FreeD Supported</span>
+              <span>1/2.8 Inch 4K Sony Image Sensorㅣ 20X Zoom Rangeㅣ 4K60(2160p59.97)ㅣ Full HD (1080/i59.94/p60) ㅣ 12G-SDI + SFP-SDI+HDMI2.0+IPㅣ FAST HEVCㅣ Ultra Low Latencyㅣ Low Bandwidthㅣ FreeD Supported</span>
             </div>
           </li>
           <li>
@@ -89,7 +88,7 @@
             </picture>
             <div>
               <h3>R9-230H</h3>
-              <span>30X Zoom Range, Sony Image Block, Full HD (1080/i59.94/p60), 3G-SDI + SFP-SDI+HDMI+IP, Standard AVC/HEVC, Super Image Stabilizer, Low Light Performance, FreeD Supported</span>
+              <span>1/1.8 Inch Sony Image Sensorㅣ 30X Zoom Rangeㅣ Full HD (1080/i59.94/p60)ㅣ 3G-SDI + SFP-SDI+HDMI+IPㅣ Standard AVC/HEVCㅣ Super Image Stabilizerㅣ Low Light Performanceㅣ FreeD Supported</span>
             </div>
           </li>
           <li>
@@ -99,7 +98,7 @@
             </picture>
             <div>
               <h3>R9-418F</h3>
-              <span>1 Inch 4K Sony Image Block, 18X Zoom Range, 4K30(2160p29.97), Full HD (1080/i59.94/p60), 6G-SDI + SFP-SDI+HDMI+IP, FAST HEVC, Ultra Low Latency, Low Bandwidth, FreeD Supported</span>
+              <span>1 Inch 4K Sony Image Sensorㅣ 18X Zoom Rangeㅣ 4K30(2160p29.97)ㅣ Full HD (1080/i59.94/p60)ㅣ 6G-SDI + SFP-SDI+HDMI+IPㅣ FAST HEVCㅣ Ultra Low Latencyㅣ Low Bandwidthㅣ FreeD Supported</span>
             </div>
           </li>
         </ul>
@@ -110,7 +109,7 @@
       <div>
         <h2>4K Sony Sensor</h2>
         <span>4K 이미지 센서를 탑재하여 보다 선명하고 저조도 촬영시에도 더욱 감소된 노이즈와 고화질 영상을 위한 넓은 수광 영역을 제공합니다.</span>
-        <img src="./img/is-sonys.png" alt="" />
+        <img src="./img/ic-sony.png" alt="" />
       </div>
     </section>
     
@@ -119,8 +118,22 @@
         <h2>놀라운 화질</h2>
         <span>829만의 높은 유효화소수로 피사체의 미세한 표현이 가능하며 주변 환경에 따라 전문가용 캠코더급 화질로 구현이 가능할 수 있습니다.</span>
         <div>
-        <img src="./img/440_mpa.png" alt="" />
-        <img src="./img/829mpc.png" alt="" />
+        <img src="./img/440_mpa.png" alt="829mp" />
+        <img src="./img/829mpc.png" alt="Snnsor" class="x_sm" />
+
+        <!-- 유튜브 영상 팝업 버튼 및 모달 -->
+        <button id="openYoutube" style="margin:1rem 0; padding:0.5rem 1rem; font-size:1rem; cursor:pointer; color: #fff;">
+          <i class="fas fa-play"></i> 유튜브 샘플 영상 보기 (설정 > 화질 > 4K 선택)</button>
+        </button>
+        <div id="youtubeModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; align-items:center; justify-content:center;">
+          <div style="position:relative; background:#fff; padding:1rem; border-radius:8px; max-width:90vw; max-height:90vh;">
+            <button id="closeYoutube" style="position:absolute; top:0.5rem; right:0.5rem; background:none; border:none; font-size:2rem; cursor:pointer;">&times;</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uotOObby7U0?si=e2brP2rOOuMUeh51&amp;start=355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <script src="./js/you_mo_pop.js"> //라디오 버튼 스크립트 </script>
+
         </div>
       </div>
     </section>
@@ -129,14 +142,24 @@
       <div>
         <h2>20x Optical Zoom</h2>
         <span>20배 줌은 광각 및 근거리 촬영 모두에서 선명도를 유지하고, 고급 이미지 신호 처리(ISP) 엔진은 색상 정확도와 저조도 성능을 향상시킵니다.</span>
-        <img src="./img/bolin-bs.png" alt="공란" />
+        <div class="vozo"><img src="./img/zosi.png" alt="공란" class="zom2x" /><h5>20x</h5></div>
+        <div class="hd_grid" id="gr-x1">
+          <li><h4>1x</h4></li>
+          <li><h4>10x</h4></li>
+        <li>
+        <img src="./img/zosi.png" alt="공란" />
+        </li>
+        <li>
+        <img src="./img/zosi.png" alt="공란" />
+        </li>
+        </div>
       </div>
     </section>
     
     <section class="f_duct">
       <div>
-        <h2>10비트 색심도</h2>
-        <span>20배 줌은 광각 및 근거리 촬영 모두에서 선명도를 유지하고, 고급 이미지 신호 처리(ISP) 엔진은 색상 정확도와 저조도 성능을 향상시킵니다.</span>
+        <h2>보다 높은 색심도</h2>
+        <span>10비트 컬러를 지원하여 기존 8비트 컬러 대비 수치상 64배 높은 색표현으로 영상 컬러 표현의 계단현상 없이 깨끗한 영상으로 보실 수 있습니다.</span>
         <div>
           <img src="./img/10b-s.png" alt="공란" />
           <img src="./img/10b-s.png" alt="공란" />
@@ -147,25 +170,29 @@
 
     <section class="h_duct">
       <div>
-        <h2>Preset 저장 및 호출</h2>
-        <span>카메라의 앵글 위치값과 컬러, 화이트밸런스등의 메뉴값을 저장 및 호출할 수 있으며 자세 제품인 SMC-100 컨트롤러를 사용 시 최대 255개의 위치 프리셋을 손쉽게 저장하며 호출할 수 있습니다.</span>
-        <img src="./img/84-sq.png" alt="공란" /><p class="bo_hd"></p>
-        <div class="hd_grid">
-          <li><h4>Set.1</h4></li>
-          <li><h4>Set.2</h4></li>
-          <li><h4>Set.3</h4></li>
-        <li>
-        <img src="./img/84-sq.png" alt="공란" />
-        </li>
-        <li>
-        <img src="./img/84-sq.png" alt="공란" />
-        </li>
-        <li>
-        <img src="./img/84-sq.png" alt="공란" />
-        </li>
+        <h2>편리한 POE 기능</h2>
+        <span>LAN 케이블만으로 전원과 통신을 동시에 사용하여 다수의 카메라를 손쉽게 원격으로 조작할 수 있습니다.</span>
+        <div class="presset"><ul>
+            <li><img src="./img/bs/se1.png" alt="preset" /></li>
+            <li><img src="./img/bs/se2.png" alt="preset" /></li>
+            <li><img src="./img/bs/se3.png" alt="preset" /></li>
+            <li><img src="./img/bs/se4.png" alt="preset" /></li></ul>
+          <img src="./img/bs/bosl.png" alt="preset" />
         </div>
       </div>
     </section>
+
+    
+    <section class="j_duct">
+      <div>
+        <h2>POE+</h2>
+        <span>20배 줌은 광각 및 근거리 촬영 모두에서 선명도를 유지하고, 고급 이미지 신호 처리(ISP) 엔진은 색상 정확도와 저조도 성능을 향상시킵니다.</span>
+        <div>
+          <img src="./img/poepp.png" alt="공란" />
+        </div>
+      </div>
+    </section>
+
 
     <section class="spec" id="sspec">
 
@@ -187,94 +214,170 @@
         
           <h2>Specifications</h2>
           
-      <input type="radio" name="spec" id="sp1" checked>
+      <input type="radio" name="spec" id="sp1">
         <div id="qp1">
           <table>
-            <tr>
-              <th>Model</th>
-              <td>R9-230H</td>
-            </tr>
-            <tr>
-              <th>Image Sensor</th>
-              <td>1/2.8 Inch 4K Sony Image Sensor</td>
-            </tr>
-            <tr>
-              <th>Zoom Range</th>
-              <td>30X Optical Zoom</td>
-            </tr>
-            <tr>
-              <th>Resolution</th>
-              <td>Full HD (1080/i59.94/p60)</td>
-            </tr>
-            <tr>
-              <th>Outputs</th>
-              <td>3G-SDI + SFP-SDI+HDMI+IP</td>
-            </tr>
-            <tr>
-              <th>Compression</th>
-              <td>Standard AVC/HEVC, Super Image Stabilizer, Low Light Performance, FreeD Supported</td>
-            </tr>
+            <tr><td><span>Model</span></td>
+            <td><span><strong>R9-230H</strong></span></td></tr>
+
+            <tr><td><span>Image Sensor</span>
+            </td><td><span>1/1.8인치 CMOS (4.17MP)</span>
+            <span>SONY 이미지 센서 탑재</span></td></tr>
+
+            <tr><td><span>Resolution</span></td>
+            <td><span><strong>1080p</strong> (60, 59.94, 50, 30, 25, 24)</span>
+            <span>1080i (60, 59.94, 50)</span></td></tr>
+
+            <tr><td><span>Color Precision</span></td>
+            <td><span>HDMI : <strong>12bit</strong>, YUV4:2:2, YUV4:2:0</span>
+            <span>SDI : 10bit, YUV4:2:2</span></td></tr>
+
+            <tr><td><span>Zoom</span></td>
+            <td><span>광학 30배ㅣ디지털 12배줌</span></td></tr>
+
+            <tr><td><span>Focal Length</span></td>
+            <td><span>f= 6.5 mm (WIDE) to 162.5 mm (TELE)</span></td></tr>
+
+            <tr><td><span>Aperture</span></td>
+            <td><span>F1.6 (Wide) to F4.8 (Tele), 16 steps</span></td></tr>
+
+            <tr><td><span>Horizontal Angle of View</span></td>
+            <td><span>58.1˚ (Wide) - 2.3˚ (Tele)</span></td></tr>
+
+            <tr><td><span>Feature</span></td>
+            <td><span>High SensitivityㅣHLCㅣE-FLIP</span>
+            <span>Backlight CompensationㅣDay/Night</span></td></tr>
+
+            <tr><td><span>White Blance</span></td>
+            <td><span>AutoㅣIndoorㅣOutdoor</span>
+            <span>OPWㅣATWㅣManual</span></td></tr>
+
+            <tr><td><span>P / T Move</span></td>
+            <td><span>PAN : +-340ㅣTILT :+-120</span></td></tr>
+
+            <tr><td><span>Interface</span></td>
+            <td><span><strong>3G-SDI</strong>ㅣHDMIㅣIP</span></td></tr>
+
+            <tr><td><span>Control</span></td>
+            <td><span>RS422ㅣIP ControlㅣIR Remote Control</span></td></tr>
+
+            <tr><td><span>Size</span></td>
+            <td><span>L201 x W253 x H249ㅣ3.8Kg</span></td></tr>
+
+            <tr><td><span>Power</span></td>
+            <td><span>12V2A DCㅣ40W(max)ㅣPOE++</span></td></tr>
+
           </table>
         </div>
       <input type="radio" name="spec" id="sp2" >
-        <div id="qp1">
-          <table>
-            <tr>
-              <th>Model</th>
-              <td>R9-418F</td>
-            </tr>
-            <tr>
-              <th>Image Sensor</th>
-              <td>1 Inch 4K Sony Image Block</td>
-            </tr>
-            <tr>
-              <th>Zoom Range</th>
-              <td>18X Optical Zoom</td>
-            </tr>
-            <tr>
-              <th>Resolution</th>
-              <td>4K30(2160p29.97), Full HD (1080/i59.94/p60)</td>
-            </tr>
-            <tr>
-              <th>Outputs</th>
-              <td>6G-SDI + SFP-SDI+HDMI+IP</td>
-            </tr>
-            <tr>
-              <th>Compression</th>
-              <td>FAST HEVC, Ultra Low Latency, Low Bandwidth, FreeD Supported</td>
-            </tr>
-            </table>
-
+        <div id="qp1"><table>
+          <tr><td><span>Model</span></td>
+          <td><span><strong>R9-418F</strong></span></td></tr>
           
-        </div>
-      <input type="radio" name="spec" id="sp3" >
-        <div id="qp1">
-          <table>
-            <tr>
-              <th>Model</th>
-              <td>R9-420F</td>
-            </tr>
-            <tr>
-              <th>Image Sensor</th>
-              <td>1/2.8 Inch 4K Sony Image Sensor</td>
-            </tr>
-            <tr>
-              <th>Zoom Range</th>
-              <td>20X Optical Zoom</td>
-            </tr>
-            <tr>
-              <th>Resolution</th>
-              <td>4K60(2160p59.97), Full HD (1080/i59.94/p60)</td>
-            </tr>
-            <tr>
-              <th>Outputs</th>
-              <td>12G-SDI + SFP-SDI+HDMI2.0+IP</td>
-            </tr>
-            <tr>
-              <th>Compression</th>
-              <td>FAST HEVC, Ultra Low Latency, Low Bandwidth, FreeD Supported</td>
-            </tr>
+          <tr><td><span>Image Sensor</span>
+          </td><td><span>1인치 Exmor R CMOS (14.2MP)</span><br>
+          <span><strong>SONY</strong>의 정품 이미지 센서 탑재</span></td></tr>
+
+          <tr><td><span>Resolution</span></td>
+          <td><span><strong>2160p</strong> (30, 25, 24, 23.98)</span><br>
+          <span>1080p (60, 59.94, 50, 30, 25, 24)</span><br>
+          <span>1080i (60, 59.94, 50)</span></td></tr>
+
+          <tr><td><span>Color Precision</span></td>
+          <td><span>HDMI : <strong>12bit</strong>, YUV4:2:2, YUV4:2:0</span><br>
+          <span>SDI : 10bit, YUV4:2:2</span></td></tr>
+
+          <tr><td><span>Zoom</span></td>
+          <td><span>4K 18배ㅣFull HD 24배줌 </span><br></td></tr>
+
+          <tr><td><span>Focal Length</span></td>
+          <td><span>f= 6.5 mm (WIDE) to 162.5 mm (TELE)</span></td></tr>
+
+          <tr><td><span>Aperture</span></td>
+          <td><span>F1.6 (Wide) to F4.8 (Tele), 16 steps</span></td></tr>
+
+          <tr><td><span>Horizontal Angle of View</span></td>
+          <td><span>58.1˚ (Wide) - 2.3˚ (Tele)</span></td></tr>
+
+          <tr><td><span>Feature</span></td>
+          <td><span>High SensitivityㅣHLCㅣE-FLIP</span><br>
+          <span>Backlight CompensationㅣDay/Night</span></td></tr>
+
+          <tr><td><span>White Blance</span></td>
+          <td><span>AutoㅣIndoorㅣOutdoor</span><br>
+          <span>OPWㅣATWㅣManual</span></td></tr>
+
+          <tr><td><span>P / T Move</span></td>
+          <td><span>PAN : +-340ㅣTILT :+-120</span></td></tr>
+
+          <tr><td><span>Interface</span></td>
+          <td><span><strong>6G-SDI</strong>ㅣHDMIㅣIP</span></td></tr>
+
+          <tr><td><span>Control</span></td>
+          <td><span>RS422ㅣIP ControlㅣIR Remote Control</span></td></tr>
+
+          <tr><td><span>Size</span></td>
+          <td><span>L201 x W253 x H249ㅣ3.8Kg</span></td></tr>
+
+          <tr><td><span>Power</span></td>
+          <td><span>12V2A DCㅣ50W(max)ㅣPOE++</span></td></tr>
+
           </table>
+        </div>
+      <input type="radio" name="spec" id="sp3" checked>
+        <div id="qp1"><table>
+          <tr><td><span>Model</span></td>
+          <td><span><strong>R9-420F</strong></span></td></tr>
+          <tr><td><span>Image Sensor</span>
+          </td><td><span>SONY 1/2.8 Inch CMOS 8.29MP</span>
+          <span><strong>SONY</strong>의 정품 이미지 센서 탑재</span></td></tr>
+
+          <tr><td><span>Resolution</span></td>
+          <td><span><strong>2160p</strong> (60, 59.94, 50, 30, 25, 24)</span>
+          <span>1080p (60, 59.94, 50, 30, 25, 24)</span>
+          <span>1080i (60, 59.94, 50)</span></td></tr>
+
+          <tr><td><span>Color Precision</span></td>
+          <td><span>HDMI : <strong>12bit</strong>, YUV4:2:2, YUV4:2:0</span>
+          <span>SDI : 10bit, YUV4:2:2</span></td></tr>
+
+          <tr><td><span>Zoom</span></td>
+          <td><span>20x (Optical Lens)</span></td></tr>
+
+          <tr><td><span>Focal Length</span></td>
+          <td><span>f= 3.55 mm (WIDE) to 63.58 mm (TELE)</span></td></tr>
+
+          <tr><td><span>Aperture</span></td>
+          <td><span>F2.0 (Wide) to F3.8 (Tele)</span></td></tr>
+
+          <tr><td><span>HFOV</span></td>
+          <td><span>78.59° (W)~4.92° (T)</span></td></tr>
+
+          <tr><td><span>Feature</span></td>
+          <td><span>Backlight CompensationㅣE-FLIP</span>
+          <span>Day/NightFlickerㅣContrastㅣEffect</span></td></tr>
+
+          <tr><td><span>White Blance</span></td>
+          <td><span>AutoㅣIndoorㅣOutdoor</span>
+          <span>OPWㅣATWㅣManual</span></td></tr>
+
+          <tr><td><span>P / T Move</span></td>
+          <td><span>PAN : +-340ㅣTILT :+-120</span></td></tr>
+
+          <tr><td><span>Interface</span></td>
+          <td><span> <strong>12G-SDI</strong>ㅣHDMIㅣIP</span></td></tr>
+
+          <tr><td><span>Control</span></td>
+          <td><span>RS422ㅣIP ControlㅣIR Remote Control</span></td></tr>
+
+          <tr><td><span>Size</span></td>
+          <td><span>L201 x W253 x H249ㅣ3.8Kg</span></td></tr>
+
+          <tr><td><span>Power</span></td>
+          <td><span>12V2A DCㅣ50W(max)ㅣPOE++</span></td></tr>
+
+          </table>
+        </div>
         </div>
         <p style="margin: 2rem; padding: 2rem;"></p>
       </div>
