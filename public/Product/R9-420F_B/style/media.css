@@ -1,6 +1,12 @@
 @charset "utf-8";
 
 @media (max-width: 768px) {
+
+  #container section:nth-child(n+3){
+    padding:0;
+  }
+
+  
   .pduct{
     display:flex;
     flex-direction: column-reverse;
@@ -14,7 +20,7 @@
   }
   
   #container .spec > div:first-child label{
-    padding: 0.25rem;
+    padding: 0.5rem;
   }
 
   #container .w_duct ul{
@@ -27,7 +33,7 @@
     padding: 0 1rem;
   }
   #container .w_duct{
-    border-top: 1px solid #8b8b8b;
+    /* border-top: 1px solid #8b8b8b; */
   }
   
   #container .presset ul{
@@ -52,14 +58,38 @@
   }
   
   #container .a_duct{
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     /* background: #ccc; */
   }
   
   #container .pduct,
   #container section{
-    margin: 0px 2rem;
+    margin: 0px 1rem;
     /* padding: 0px 2rem; */
+  }
+  
+  #container .w_duct div + ul{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  
+  #container .w_duct div + ul > li{
+    display: flex;
+    /* gap: 0 1rem; */
+    width: 80%;
+    /* max-width: 88%; */
+    min-width: 60%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  #container .w_duct div + ul > li picture{
+    width: 50%;
   }
 
 

@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 p {
@@ -68,15 +69,16 @@ body {
     line-height: 1.6;
     font-size: var(--size-ca);
     position: relative;
-    background: var(--color-bb);
+    /* background: var(--color-b); */
 }
 
 header {
     padding: 1rem 0;
 }
 
-section{
+section, body{
     background-color: var(--color-bb);
+    /* background: #ccc; */
 }
 
 #container{
