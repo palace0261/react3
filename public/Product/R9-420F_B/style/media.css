@@ -6,10 +6,6 @@
   /* display: contents; */
 }
 
-  .wresset ul{
-    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
-    gap: 0.5rem;
-  }
   
   #container section:nth-child(n+2) > div{
     padding: calc(4rem + 0.25vw) calc(1rem + 0.25vw);
@@ -77,7 +73,8 @@
 
   #container .a_duct > div > span,
   #container section:nth-child(n+3) > div > span, 
-  #container section:nth-child(n+3) > div > li span{
+  #container section:nth-child(n+3) > div > li span,
+  .wresset span{
     font-size: calc(0.5rem + 0.75vw);
     line-height: 1.7;
     display: inline-block;

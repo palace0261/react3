@@ -494,7 +494,7 @@ font-size: var(--size-cb);
 
 .wresset ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   gap: 1rem;
 }
 
@@ -528,8 +528,13 @@ font-size: var(--size-cb);
   font-size: 72%;
 }
 
+.ps_set span{
+  font-size:1rem;
+}
+
 .ps_set > span > p{
   font-size: var(--size-cb);
+  text-align: left;
 }
 
 .ps_set > span{
