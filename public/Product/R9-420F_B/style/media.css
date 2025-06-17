@@ -3,9 +3,14 @@
 @media (max-width: 768px) {
   
 .f_duct > div > div li{
-  display: contents;
+  /* display: contents; */
 }
 
+  .wresset ul{
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    gap: 0.5rem;
+  }
+  
   #container section:nth-child(n+2) > div{
     padding: calc(4rem + 0.25vw) calc(1rem + 0.25vw);
     /* margin: 0 1rem; */
