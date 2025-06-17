@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 @media (max-width: 768px) {
+  
+.f_duct > div > div li{
+  display: contents;
+}
 
   #container section:nth-child(n+2) > div{
     padding: calc(4rem + 0.25vw) calc(1rem + 0.25vw);
@@ -17,6 +21,16 @@
      /* border-radius: 1rem; */
   }
 
+
+  #container section:nth-child(11) #se_dv img
+  {
+     height: calc(10.5rem + 0.25vw);
+     object-fit: cover;
+     display: inline-block;
+     margin: 0 auto;
+     text-align: center;
+  }
+  
   #container section:nth-child(12) #se_dv img
   {
      height: calc(10.5rem + 0.25vw);
@@ -29,7 +43,8 @@
   #container section:nth-child(5) #se_dv img:first-child,
   #container section:nth-child(6) #se_dv img,
   #container section:nth-child(7) #se_dv img,
-  #container section:nth-child(9) #se_dv img
+  #container section:nth-child(9) #se_dv img,
+  #container section:nth-child(10) #se_dv img
   {
      height: calc(17.75rem + 0.25vw);
      object-fit: cover;
@@ -59,6 +74,8 @@
   #container section:nth-child(n+3) > div > span, 
   #container section:nth-child(n+3) > div > li span{
     font-size: calc(0.5rem + 0.75vw);
+    line-height: 1.7;
+    display: inline-block;
   }
 
 
@@ -92,15 +109,7 @@
     width: 50%;
     padding: 0 1rem;
   }
-  #container .w_duct{
-    /* border-top: 1px solid #8b8b8b; */
-  }
-  
-  #container .presset ul{
-  grid-template-columns: repeat(auto-fill, minmax(49%, auto));
-  /* grid-template-rows: 1fr 1fr; */
-  }
-
+ 
   
   body #container > section > ul > li{
     display:flex;

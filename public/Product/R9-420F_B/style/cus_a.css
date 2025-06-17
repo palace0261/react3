@@ -44,12 +44,9 @@ section{
   border-radius:0.5rem;
 }
 
-#se_dv li {
-  display: contents;
-}
-
 #se_dv{
   margin-top: calc(1rem + 1.25vw);
+  text-align: center;
 }
 
 section:nth-child(n+2) > div{
@@ -278,12 +275,12 @@ section:nth-child(n+3) > div > li span
 
 .f_duct > div > div{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(49%, auto));
+  grid-template-columns: repeat(auto-fill, minmax(48%, auto));
   gap: 1.5rem;
   min-height: 0;
   /* padding: 1rem 0rem 0 0; */
-  align-items: center;
   justify-items: center;
+  align-items: center;
 }
 
 .spec > div:last-child{
@@ -485,13 +482,19 @@ font-size: var(--size-cb);
 
 .ps_set{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
+  gap: 1.0rem;
+}
+
+.h_duct .presset ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+  gap: 0 0.5rem;
 }
 
 .presset ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   gap: 0 0.5rem;
 }
 
