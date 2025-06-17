@@ -24,7 +24,7 @@ section{
   background: var(--color-b);
 }
 
-#container .pduct{
+.pduct{
   margin-bottom: calc(-3rem + -0.75vw);
   background: #ffffff00;
 }
@@ -44,6 +44,9 @@ section{
   border-radius:0.5rem;
 }
 
+#se_dv li {
+  display: contents;
+}
 
 #se_dv{
   margin-top: calc(1rem + 1.25vw);
@@ -54,11 +57,12 @@ section:nth-child(n+2) > div{
   max-width: 860px;
   margin: 0 auto;
   min-height: 16rem;
-  padding: calc(3rem + 0.25vw);
+  padding: calc(3rem + 0.25vw) 0;
 }
-#container .rl_sdu ul li span{
-  /* font-size: var(--size-cb); */
-  font-size: calc(0.5rem + 0.25vw);
+.rl_sdu ul li span{
+  font-size: var(--size-cb);
+  /* font-size: calc(0.5rem + 0.25vw); */
+  padding-top: 0.5rem;
 }
 
 .spx h2{
@@ -108,6 +112,7 @@ section:nth-child(n+3) > div > li span
   display:flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .pduct > div img{
@@ -203,9 +208,10 @@ section:nth-child(n+3) > div > li span
 .rl_sdu > div{
   overflow: hidden;
   /* max-height: 32rem; */
-  background: var(--color-gg);
+  background-image: linear-gradient(to right, #243949 9%, #517fa4 100%);
+  background-color: #000000;
   border-radius:0.75rem;
-  margin: 1.75rem 0;
+  margin: 1.0rem 0;
   padding: 0 1rem;
 }
 
@@ -235,22 +241,23 @@ section:nth-child(n+3) > div > li span
 }
 
 .w_duct div + ul > li{
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
-  background: #313131;
+  background: #2a2a2a;
 }
 
 .rl_sdu ul div {
   display:flex;
-  align-items: center;
+  width: 100%;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .w_duct div + ul{
   display:grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr; */
-  gap: 2rem;
+  gap: 1rem;
   /* margin-top: 2rem; */
 }
 
@@ -261,6 +268,8 @@ section:nth-child(n+3) > div > li span
 .f_duct > div li:last-child span{
   border-bottom: 2px solid #ff0000;
   font-weight: bold;
+  display: inline-block;
+  /* width: 100%; */
 }
 
 .f_duct > div li:first-child img{
@@ -269,7 +278,7 @@ section:nth-child(n+3) > div > li span
 
 .f_duct > div > div{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(49%, auto));
   gap: 1.5rem;
   min-height: 0;
   /* padding: 1rem 0rem 0 0; */
@@ -460,7 +469,7 @@ background: #000000d1;
   
 text-align: center;
   
-font-size: var(--size-ca);
+font-size: var(--size-cb);
 }
 
 .presset > ul > li{

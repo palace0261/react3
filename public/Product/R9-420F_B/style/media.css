@@ -2,6 +2,66 @@
 
 @media (max-width: 768px) {
 
+  #container section:nth-child(n+2) > div{
+    padding: calc(4rem + 0.25vw) calc(1rem + 0.25vw);
+    /* margin: 0 1rem; */
+  }
+  #container #sspec > div{margin:0;padding: 1rem;}
+  
+  #container #gr-x1 li:nth-child(3) img,
+  #container #gr-x1 li:nth-child(4) img{
+     height: calc(10.75rem + 0.25vw);
+     object-fit: cover;
+     margin: 0 auto;
+     display: flex;
+     /* border-radius: 1rem; */
+  }
+
+  #container section:nth-child(12) #se_dv img
+  {
+     height: calc(10.5rem + 0.25vw);
+     object-fit: cover;
+     display: inline-block;
+     margin: 0 auto;
+     text-align: center;
+  }
+  #container section:nth-child(4) #se_dv img,
+  #container section:nth-child(5) #se_dv img:first-child,
+  #container section:nth-child(6) #se_dv img,
+  #container section:nth-child(7) #se_dv img,
+  #container section:nth-child(9) #se_dv img
+  {
+     height: calc(17.75rem + 0.25vw);
+     object-fit: cover;
+     border-radius: 1rem;
+     display: inline-block;
+     margin: 0 auto;
+     text-align: center;
+  }
+
+  
+  #container .pduct > div img{
+    scale: 1.1;
+    /* top: 1px; */
+    position: relative;
+  }
+  
+  #container .a_duct > div > h1{
+    font-size: calc(2.0rem + 1.25vw);
+  }
+
+
+  #container section:nth-child(n+3) > div h2{
+    font-size: calc(1.5rem + 1.25vw);
+  }
+
+  #container .a_duct > div > span,
+  #container section:nth-child(n+3) > div > span, 
+  #container section:nth-child(n+3) > div > li span{
+    font-size: calc(0.5rem + 0.75vw);
+  }
+
+
   #container section:nth-child(n+3){
     padding:0;
   }
@@ -23,8 +83,8 @@
     padding: 0.5rem;
   }
 
-  #container .w_duct ul{
-    margin-top: 1rem;
+  #container .w_duct ul i{
+    padding: 0 0.25rem 0.25rem  0;
   }
 
   #container .w_duct > ul > picture{
@@ -37,7 +97,7 @@
   }
   
   #container .presset ul{
-  grid-template-columns: repeat(auto-fill, minmax(40%, auto));
+  grid-template-columns: repeat(auto-fill, minmax(49%, auto));
   /* grid-template-rows: 1fr 1fr; */
   }
 
@@ -54,7 +114,11 @@
     grid-template-columns: 1fr;
   }
   body #container .a_duct > div{
-    padding: 1rem;
+    padding: 1rem 2rem;
+    /* margin: 0 1rem; */
+    min-height: 0;
+    top: 1px;
+    position: relative;
   }
   
   #container .a_duct{
@@ -64,7 +128,8 @@
   
   #container .pduct,
   #container section{
-    margin: 0px 1rem;
+    margin: 0px 0rem;
+    margin-bottom: 0px;
     /* padding: 0px 2rem; */
   }
   
@@ -76,6 +141,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     position: relative;
+    gap: 1rem;
   }
   
   #container .w_duct div + ul > li{
@@ -86,10 +152,13 @@
     min-width: 60%;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
   }
   
   #container .w_duct div + ul > li picture{
-    width: 50%;
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
 
 
