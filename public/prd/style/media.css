@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px) {
+
+  #container .av_prd_info{
+    justify-items:flex-start;
+  }
+
+  /* Font-Size */
+
+  #container .av_prd_info h2{
+    font-size: calc(3.5rem + 0.25vw);
+  }
+
+  #container .av_prd_info h3{
+    font-size: calc(1.5rem + 0.25vw);
+  }
+
+}
