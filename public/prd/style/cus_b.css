@@ -494,15 +494,15 @@ z-index: 12;
 
 .ps_set{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+  gap: 1rem;
   padding-top: 1rem;
 }
 
 .h_duct .presset ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 1rem;
   padding-top: 1rem;
 }
 
@@ -556,7 +556,7 @@ z-index: 12;
 
 .ps_set > span{
   /* background: #1c1c1c; */
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
   border: 3px solid #ebebeb;
   background: #000000;

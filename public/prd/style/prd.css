@@ -73,7 +73,7 @@ header {
 .ba_av h2{
   font-size: var(--size-b);
   border-left: 8px solid var(--p_color_b);
-  line-height: 0.8;
+  line-height: 1;
   margin: 0.8rem 0;
   padding: 0.5rem 0.5rem;
 }

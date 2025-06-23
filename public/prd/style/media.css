@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 768px) {
 
+  #container .ps_set{
+    grid-template-columns:1fr;
+  }
+
    #container .bas{
      top:12%;
    }
