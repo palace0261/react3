@@ -88,7 +88,7 @@ section:nth-child(n+2) > div > li span
 }
 
 .g_duct > div > span+div img:first-child{
-  width: 98%;
+  /* width: 98%; */
 }
 
 .x_sm{
@@ -433,7 +433,7 @@ section:nth-child(n+2) > div > li span
   font-size: calc(1.5rem + 0.25vw);
   /* transform: translate(-50%,-50%); */.;
   width: 15%;
-  min-width: 5rem;
+  min-width: calc(4.5rem + 0.25vw);
   line-height: 2;
   border-radius: 1.5rem;
   text-align: center;
@@ -524,13 +524,12 @@ z-index: 12;
 }
 
 .p_set{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin: 2rem 0 5rem;
+  display: grid;
+  grid-template-columns: 7fr 1fr 7fr;
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
   align-items: center;
-  /* padding: 0 1rem; */
-  gap: 0 0.75rem;
 }
 
 .p_set > p {

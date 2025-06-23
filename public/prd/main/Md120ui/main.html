@@ -104,19 +104,27 @@
           style="filter: grayscale(0.9);" />
           <span class="moon"><i class="fa-solid fa-moon"></i> </span>
         </div>
-
-        
-        <div>
-          <div><img src="../../img/am1.png">
-        </div>
-
-
-          
-        </div>
+      </div>
       </div>
     </section>
 
 
+
+    <section class="av_sc" id="xirba">
+      <div class="av_w">
+        <h2>IR 램프 탑재</h2>
+        <span>적외선(IR) 램프가 탑재되어 있어, 어두운 환경에서도 선명한 영상을 제공합니다.</span>
+          
+        
+        <div class="ad_f">
+          <div><img src="../../img/sq2.png"></div>
+          <div><img src="../../img/sq1.png"></div>
+          <span>Off</span>
+          <span class="bb_line">On</span>
+        </div>
+
+      </div>
+    </section>
     
 
     <section class="av_sc">
@@ -322,11 +330,35 @@
       <div>
         <h2>놀라운 화질</h2>
         <span>4K 해상도(3840x2160)로 선명하고 디테일한 영상을 제공하며, 800만의 유효화소수로 피사체의 미세한 표현이 가능합니다.</span>
+        <!-- 
         <div>
           <div id="se_dv">
             <img src="../../img/440_apa.png" alt="829mp">
           </div>
+        </div>-->
+        
+        <div>
+          
+          <div class="sox">
+            <div style="display: flex;" id="se_dv">
+              <picture>
+                <source media="(max-width: 768px)" srcset="../../img/440_apa_m.png">
+                <img src="../../img/440_apa.png">
+              </picture>
+              <span class="s21">2160</span>
+            </div>
+            <div class="so_xa">
+            <div>
+              <picture>
+                <source media="(max-width: 768px)" srcset="../../img/440_apa_m.png">
+                <img src="../../img/440_apa.png">
+              </picture>
+            </div>
+            <span class="s10">1080</span>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -601,7 +633,7 @@
 
         <table class="spec-table">
           <tbody>
-            <tr><th colspan="2">카메라</th></tr>
+            <tr style="border:none;"><th colspan="2">카메라</th></tr>
             <tr><td>이미지 센서</td><td>1/2.8' CMOS</td></tr>
             <tr><td>유효 화소</td><td>8 Megapixels</td></tr>
             <tr><td>출력 해상도</td><td>해상도: 4K / 1080p / 720p<br>프레임 레이트: 60 / 59.94 / 50 / 30 / 29.97 / 25</td></tr>
@@ -627,7 +659,7 @@
             <tr><td>카메라 제어 프로토콜</td><td>VISCA (RS-232 / RS-422 / IP), CGI (IP)</td></tr>
             <tr><td>이미지 프로세싱</td><td>상하 반전, 좌우 반전, 일시 정지, WDR 광역 보정, BLC 역광 보정</td></tr>
             <tr><td>상용 주파수</td><td>50 Hz, 60 Hz</td></tr>
-            <tr><th colspan="2">일반</th></tr>
+            <tr style="border:none;"><th colspan="2">일반</th></tr>
             <tr><td>작동 전원</td><td>12V</td></tr>
             <tr><td>소비 전력</td><td>24W</td></tr>
             <tr><td>PoE</td><td>PoE+ (IEEE802.3at)</td></tr>
@@ -640,15 +672,15 @@
             <tr><td>적외선(IR) 리모컨</td><td>지원</td></tr>
             <tr><td>작동 환경</td><td>작동 온도: 0 °C to +40 °C<br>작동 습도: 20% to 80%</td></tr>
             <tr><td>보관 환경</td><td>보관 온도: -20 °C to +60 °C<br>보관 습도: 20% to 95%</td></tr>
-            <tr><th colspan="2">오디오</th></tr>
+            <tr style="border:none;"><th colspan="2">오디오</th></tr>
             <tr><td>채널</td><td>2채널 스테레오</td></tr>
             <tr><td>코덱</td><td>AAC-LC (48K)</td></tr>
             <tr><td>내장 마이크</td><td>1개(무지향성)</td></tr>
-            <tr><th colspan="2">인터페이스</th></tr>
+            <tr style="border:none;"><th colspan="2">인터페이스</th></tr>
             <tr><td>비디오 출력</td><td>HDMI, IP, USB</td></tr>
             <tr><td>오디오 출력</td><td>HDMI, IP, USB</td></tr>
             <tr><td>오디오 입력</td><td>N/A</td></tr>
-            <tr><th colspan="2">IP 스트리밍</th></tr>
+            <tr style="border:none;"><th colspan="2">IP 스트리밍</th></tr>
             <tr><td>해상도</td><td>4K 60fps</td></tr>
             <tr><td>네트워크 비디오 압축 포맷</td><td>H.264, H.265, MJPEG</td></tr>
             <tr><td>최대 프레임 레이트</td><td>4K 60fps</td></tr>
@@ -657,23 +689,23 @@
             <tr><td>네트워크 인터페이스</td><td>10 / 100 / 1000 Base-T</td></tr>
             <tr><td>다중 스트림 기능</td><td>2 (RTSP / Web page), 4K 60fps Max.</td></tr>
             <tr><td>네트워크 프로토콜</td><td>IPv6, IPv4, TCP, UDP, ARP, ICMP, IGMP, HTTP, DHCP RTP/RTCP, RTSP, RTMP,VISCA over IP</td></tr>
-            <tr><th colspan="2">USB</th></tr>
+            <tr style="border:none;"><th colspan="2">USB</th></tr>
             <tr><td>커넥터</td><td>USB 3.0 (Type-B)</td></tr>
             <tr><td>비디오 포맷</td><td>MJPEG</td></tr>
             <tr><td>최대 비디오</td><td>2160p</td></tr>
             <tr><td>USB Video Class(UVC)</td><td>UVC 1.1</td></tr>
             <tr><td>USB Audio Class(UAC)</td><td>UAC 1.0</td></tr>
-            <tr><th colspan="2">Web UI</th></tr>
+            <tr style="border:none;"><th colspan="2">Web UI</th></tr>
             <tr><td>라이브 비디오 미리보기</td><td>지원</td></tr>
             <tr><td>카메라 PTZ 제어</td><td>팬, 틸트, 줌, 포커스, 프리셋 제어</td></tr>
             <tr><td>카메라 / 이미지</td><td>노출, 화이트밸런스, 캡처</td></tr>
             <tr><td>네트워크 설정</td><td>DHCP, IP 주소, 게이트웨이, 서브넷 마스크, DNS</td></tr>
-            <tr><th colspan="2">소프트웨어</th></tr>
+            <tr style="border:none;"><th colspan="2">소프트웨어</th></tr>
             <tr><td>IP 검색 및 설정 툴</td><td>Windows® 7 이상 지원</td></tr>
             <tr><td>ViewCare</td><td>Windows® 7 이상 지원</td></tr>
             <tr><td>PTZ 컨트롤 패널</td><td>iOS & iPadOS® 11 이상 지원</td></tr>
             <tr><td>카메라 설정 툴</td><td>Windows® 7 이상, macOS® 10.14 이상 지원</td></tr>
-            <tr><th colspan="2">품질 보증</th></tr>
+            <tr style="border:none;"><th colspan="2">품질 보증</th></tr>
             <tr><td>카메라</td><td>1년</td></tr>
           </tbody>
         </table>

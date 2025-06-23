@@ -2,6 +2,15 @@
 
 @media screen and (max-width: 768px) {
 
+  
+  #container .p_set {
+    grid-template-columns:1fr;
+  }
+
+  #container .p_set h5{
+    display:none;
+  }
+
   #container .ps_set{
     grid-template-columns:1fr;
   }
@@ -46,7 +55,7 @@
   {
      height: calc(17.75rem + 0.25vw);
      object-fit: cover;
-     border-radius: 1rem;
+     /* border-radius: 1rem; */
      display: inline-block;
      margin: 0 auto;
      text-align: center;
