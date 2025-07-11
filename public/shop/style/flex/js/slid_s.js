@@ -1,9 +1,10 @@
 // pc slide
 
-var bullet = ['PTZ', '22a2', '3', '4', '5'];
+var bullet = ['P1TZ', '22a2', '3', '4', '5'];
 
 var swiper2 = new Swiper(".mySwiper", {
 
+effect: "fade",
 autoplay: {
 delay: 5500,
 disableOnInteraction: false
